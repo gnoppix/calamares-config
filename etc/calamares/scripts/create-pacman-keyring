@@ -1,0 +1,7 @@
+#!/bin/bash
+haveged -w 1024
+pacman-key --init
+pkill haveged
+pacman-key --add /usr/share/pacman/keyrings/cachyos.gpg && sudo pacman-key --lsign-key F3B607488DB35A47
+pacman-key --add /usr/share/pacman/keyrings/gnoppix.gpg && sudo pacman-key --lsign-key 8F0C4802B19DD03E
+pacman-key --populate
