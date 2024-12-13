@@ -1,1 +1,1 @@
-# calamares-config
+# Gnoppix calamares-config
